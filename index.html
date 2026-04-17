@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Luca Moraes Zaharic - Desenvolvedor de Software">
+    <title>Luca Zaharic | Desenvolvedor de Software</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">&lt;Zaharic<span class="accent">/&gt;</span></a>
+
+            <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <ul class="nav__menu">
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <p class="hero__greeting">Olá, meu nome é</p>
+                <h1 class="hero__name">Luca Zaharic</h1>
+                <h2 class="hero__title">Desenvolvedor de <span class="accent">Software</span></h2>
+                <p class="hero__description">
+                    Bacharel em Sistemas de Informação pela FIAP com fluência em inglês (C2).
+                    Especializado em aplicações web e mobile, com experiência em automação de processos
+                    em grandes empresas como a Huawei.
+                </p>
+                <div class="hero__cta">
+                    <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
+                </div>
+            </div>
+            <div class="hero__decoration">
+                <div class="hero__code-card">
+                    <div class="code-card__header">
+                        <span class="code-card__dot code-card__dot--red"></span>
+                        <span class="code-card__dot code-card__dot--yellow"></span>
+                        <span class="code-card__dot code-card__dot--green"></span>
+                    </div>
+                    <pre class="code-card__content"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">nome</span>: <span class="code-string">"Luca Zaharic"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"Java"</span>, <span class="code-string">"Swift"</span>, <span class="code-string">"Flutter"</span>],
+  <span class="code-prop">formacao</span>: <span class="code-string">"Sistemas de Informação - FIAP"</span>
+};
+
+<span class="code-keyword">while</span> (<span class="code-var">developer</span>.<span class="code-prop">criando</span>) {
+  <span class="code-fn">solve</span>(<span class="code-string">"complexProblems"</span>);
+}</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+                <span class="scroll-indicator__text">Scroll</span>
+                <svg class="scroll-indicator__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="sobre" class="section about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">01.</span>
+                <h2 class="section__title">Sobre Mim</h2>
+            </div>
+            <div class="about__grid">
+                <div class="about__content">
+                    <p>
+                        Sou <strong>bacharel em Sistemas de Informação pela FIAP</strong> e possuo fluência
+                        em inglês (nível C2). Minha trajetória combina uma base acadêmica sólida com
+                        experiência prática no desenvolvimento de aplicações web e mobile, além de
+                        vivência corporativa em automação de processos em grandes empresas como a
+                        <strong>Huawei</strong>.
+                    </p>
+                    <p>
+                        Sou movido pela <strong>resolução de problemas complexos</strong> e pela criação
+                        de soluções que gerem impacto real, como o projeto VeriVox, que foi reconhecido
+                        entre os melhores de uma competição de startups.
+                    </p>
+                    <p>
+                        Busco constantemente aplicar as melhores práticas de arquitetura de software,
+                        como <span class="accent">Clean Architecture</span> e princípios
+                        <span class="accent">SOLID</span>, para entregar códigos escaláveis e de alta qualidade.
+                    </p>
+                    <a href="#contato" class="btn btn--text">Entre em contato →
+                    </a>
+                </div>
+                <div class="about__image-wrapper">
+                    <div class="about__image">
+                        <img src="images/profile-pic (2).png" alt="Foto de Luca Zaharic" loading="lazy">
+                        <div class="about__image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="section projects">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">02.</span>
+                <h2 class="section__title">Projetos</h2>
+            </div>
+            <div class="projects__grid">
+
+                <!-- Project Card 1 - VeriVox -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <svg class="project-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        <div class="project-card__links">
+                            <a href="https://github.com/lucazaharic" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">VeriVox</h3>
+                    <p class="project-card__description">
+                        API de segurança para biometria de voz e detecção de deepfakes. Selecionada como
+                        Top 10 no Startup One da FIAP, com foco em escalabilidade de backend.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">APIs REST</span>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 - Zaharic Commerce -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <svg class="project-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <div class="project-card__links">
+                            <a href="https://github.com/lucazaharic" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Zaharic Commerce</h3>
+                    <p class="project-card__description">
+                        E-commerce completo com catálogo de produtos, sistema de carrinho e autenticação
+                        de usuários. Aplicação full stack com Java.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">SQL</span>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 - Movie-APP -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <svg class="project-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+                            <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+                        </svg>
+                        <div class="project-card__links">
+                            <a href="https://github.com/lucazaharic" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">Movie-APP</h3>
+                    <p class="project-card__description">
+                        Aplicativo mobile para consumo de APIs de cinema, permitindo busca e listagem
+                        dinâmica de filmes com interface intuitiva.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Dart</span>
+                        <span class="tech-badge">APIs REST</span>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 - AtendimentoClientes -->
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <svg class="project-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <div class="project-card__links">
+                            <a href="https://github.com/lucazaharic" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="project-card__link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-card__title">AtendimentoClientes</h3>
+                    <p class="project-card__description">
+                        Sistema de gestão para controle de chamados e suporte, focado na organização
+                        eficiente de dados do cliente.
+                    </p>
+                    <div class="project-card__tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">SQL</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="section skills">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">03.</span>
+                <h2 class="section__title">Habilidades</h2>
+            </div>
+            <div class="skills__grid">
+
+                <!-- Skill Category 1 - Linguagens & Frameworks -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Linguagens & Frameworks</h3>
+                    <div class="skill-category__items">
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.762.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Java</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Swift (iOS)</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Flutter</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3 0l1.512 16.644L12 24l7.488-7.356L21 0H3zm11.472 9.432l-.624 6.684-4.596.528-.528-4.596 5.748-.528v-2.088zm-6.024 3.204l.516 5.856 4.596.516-.528-4.596h2.088l-.516-5.844-4.596-.516.528 4.596h-2.088z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">JavaScript</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.28 15.22c.22-.6.33-1.22.33-1.87 0-2.76-1.69-4.64-4.37-4.64-1.2 0-2.25.34-3.05.95v2.09c.64-.52 1.51-.8 2.45-.8 1.43 0 2.27.8 2.27 2.13 0 1.3-.83 2.13-2.27 2.13h-1.51v2.59h1.51c1.65 0 2.73-1.08 2.73-2.69 0-.91-.23-1.66-.69-2.19z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Spring Boot</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 - Arquitetura & Dados -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Arquitetura & Dados</h3>
+                    <div class="skill-category__items">
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Clean Architecture</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18M9 21V9"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">MVVM / MVC</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">APIs REST</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">PostgreSQL</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Firebase</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 - Ferramentas -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Ferramentas</h3>
+                    <div class="skill-category__items">
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0L1.75 6v12L12 24l10.25-6V6L12 0zm-5.75 19.75L2.5 17v-3.5l3.75 1.75v4.5zm7.5-1.5L17.5 17v-3.5l3.75 1.75v4.5zM12 11.25L6.5 7.5v7L12 18.25l5.5-3.75v-7L12 11.25z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Git / GitHub</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">BitBucket</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.53 2c-.58.02-1.07.03-1.53.05C5.75 2.55 2 6.57 2 11.21c0 5.03 3.66 9.03 8.49 9.88.25.03.36-.11.36-.25v-1.63c-3.28.62-4.07-1.56-4.07-1.56-.54-1.37-1.33-1.74-1.33-1.74-1.09-.76.05-.74.05-.74 1.2.06 1.84 1.21 1.84 1.21 1.07 1.86 2.8 1.32 3.49 1.01.11-.78.42-1.32.76-1.62-2.66-.3-5.47-1.32-5.47-5.9 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.53.12-3.17 0 0 1-.31 3.3 1.23a11.58 11.58 0 016 0c2.3-1.54 3.3-1.23 3.3-1.23.65 1.64.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.58-2.81 5.6-5.48 5.9.43.37.81 1.1.81 2.22v3.29c0 .14.11.28.36.25C18.34 20.24 22 16.24 22 11.21c0-4.64-3.75-8.66-8.47-9.16-.46-.02-1.07-.03-1.53-.05-.01 0-.03 0-.03 0"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">Jira</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9.586 0C8.366 0 7.172.548 6.332 1.387l-.002.002C5.1 2.62 4.551 3.814 4.55 5.034c0 .368.04.73.114 1.082h-.001C2.18 6.78 0 9.217 0 12c0 2.783 2.18 5.22 4.663 5.884-.002.04-.004.088-.004.133 0 .165.013.329.04.49h.001c.368 2.126 2.32 3.793 4.658 3.793.476 0 .934-.07 1.365-.202-.326.977-.48 1.71-.48 2.293 0 .857.26 1.906.806 3.234.702 1.709 1.787 3.092 3.061 3.946 1.274-.854 2.359-2.237 3.061-3.946.546-1.328.806-2.377.806-3.234 0-.583-.154-1.316-.48-2.293.431.131.889.202 1.365.202 2.338 0 4.29-1.667 4.658-3.793h.001c.027-.161.04-.325.04-.49 0-.045-.002-.093-.004-.133C21.82 17.22 24 14.783 24 12c0-2.783-2.18-5.22-4.663-5.884.074-.352.114-.714.114-1.082 0-1.22-.549-2.414-1.388-3.293l-.002-.002C17.035.548 15.841 0 14.621 0h-.001l-.001.001L13.38.001H10.62l-.001-.001L9.586 0zM4.004 6.554c.535 0 1.02.207 1.385.572.364.364.592.848.592 1.375 0 .526-.228 1.01-.592 1.375-.365.365-.85.572-1.385.572s-1.02-.207-1.385-.572c-.364-.365-.592-.849-.592-1.375 0-.527.228-1.011.592-1.375.365-.365.85-.572 1.385-.572zm15.994 0c.535 0 1.02.207 1.385.572.364.364.592.848.592 1.375 0 .526-.228 1.01-.592 1.375-.365.365-.85.572-1.385.572s-1.02-.207-1.385-.572c-.364-.365-.592-.849-.592-1.375 0-.527.228-1.011.592-1.375.365-.365.85-.572 1.385-.572zm-7.997 5.085c.926 0 1.68.75 1.68 1.68 0 .927-.754 1.68-1.68 1.68-.927 0-1.68-.753-1.68-1.68 0-.93.753-1.68 1.68-1.68z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">JUnit</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.413z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-item__name">HTML / CSS</span>
+                            <div class="skill-item__bar">
+                                <div class="skill-item__bar-fill" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section contact">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">04.</span>
+                <h2 class="section__title">Contato</h2>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Vamos conversar!</h3>
+                    <p class="contact__text">
+                        Estou sempre aberto a novas oportunidades, projetos interessantes ou
+                        simplesmente para trocar uma ideia sobre tecnologia.
+                    </p>
+                    <div class="contact__links">
+                        <a href="mailto:lucazaharic@gmail.com" class="contact__link">
+                            <span class="contact__link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                            </span>
+                            <span class="contact__link-text">lucazaharic@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/lucazaharic" target="_blank" rel="noopener noreferrer" class="contact__link">
+                            <span class="contact__link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </span>
+                            <span class="contact__link-text">github.com/lucazaharic</span>
+                        </a>
+                        <a href="https://linkedin.com/in/lucazaharic" target="_blank" rel="noopener noreferrer" class="contact__link">
+                            <span class="contact__link-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </span>
+                            <span class="contact__link-text">linkedin.com/in/lucazaharic</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nome</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensagem</label>
+                        <textarea id="message" name="message" class="form__input form__input--textarea" placeholder="Sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Enviar Mensagem</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                Designed & Built by <a href="#" class="footer__link">Luca Zaharic</a>
+            </p>
+            <p class="footer__copyright">
+                © 2026 Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
